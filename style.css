@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Liberation';
+    src: url('./fonts/LiberationSans-Bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation';
+    src: url('./fonts/LiberationSans-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --color-ocre:#ea9f06;
+    --bg-color: #f3f3f3;
+    --bg-color-img:#1b1b1b;
+    --bg--color-footer:#373737;
+    --color-social§Media: #818181;
+
+    --fnt-fam: "liberation-sans", sans-serif;
+}
+*{
+    width: 100vw;
+    margin: 0;
+    font-family: var(--fnt-fam);
+    background-color: var(--bg-color);
+}
