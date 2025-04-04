@@ -7,24 +7,25 @@
     <title>Sport</title>
   </head>
   <body>
-    <header>
+    <header class="head__homepage">
       <section class="brand">
         <img class="logo" src="./assets/images/logo.png" alt="logo" />
         <h1 class="section__brandPres">
           Lorem ipsum dolor
-          <span class="section__branPresHighlight">sit amet.</span>
+          <span class="section__branPresHighlight">sit amet</span>
         </h1>
       </section>
       <h2 class="welcomeUserConnected">Bonjour Julien</h2>
       <nav class="navbar">
-        <a href="" class="navbar__link">Contactez-nous</a>
-        <a href="" class="navbar__link">Parrainage</a
-        ><a href="" class="navbar__link">Déconnexion</a>
+        <a href="#" class="navbar__link">Contactez-nous</a>
+        <a href="#" class="navbar__link">Parrainage</a>
+        <a href="#" class="navbar__link">Déconnexion</a>
       </nav>
     </header>
-    <main>
+    <main class="main__homepage">
       <section class="top_catalog_img">
         <img
+          class="catalog_img"
           src="./assets/images/header-page-catalogue.png"
           alt="top_catalog_img"
         />
@@ -32,48 +33,80 @@
       <section class="section__articles">
         <div class="article">
           <h3 class="discountapplied">- 45%</h3>
-          <img src="./assets/images/gant-boxe-1.png" alt="" />
+          <a href="" class="articleCard">
+            <img
+              class="article__img"
+              src="./assets/images/gant-boxe-1.png"
+              alt=""
+            />
+          </a>
           <p class="articleName">GANTS DE BOXE KLIMAX V3</p>
-          <button class="salearcticle">Voir la vente</button>
-          <h3 class="oldPrice__article">
-            120  &euro;<span class="discountedPrice"> 65  &euro;</span>
-          </h3>
+          <div class="soldedArticle">
+            <button class="salearcticle">Voir la vente</button>
+            <p class="oldPrice__article">120 &euro;</p>
+            <p class="discountedPrice">65 &euro;</p>
+          </div>
         </div>
         <div class="article">
           <h3 class="discountapplied">- 45%</h3>
-          <img src="./assets/images/gant-boxe-2.png" alt="" />
+          <a href="" class="articleCard">
+            <img
+              class="article__img"
+              src="./assets/images/gant-boxe-2.png"
+              alt=""
+            />
+          </a>
           <p class="articleName">GANTS DE BOXE KLIMAX V3</p>
-          <button class="salearcticle">Voir la vente</button>
-          <h3 class="oldPrice__article">
-            120  &euro;<span class="discountedPrice"> 65  &euro;</span>
-          </h3>
+          <div class="soldedArticle">
+            <button class="salearcticle">Voir la vente</button>
+            <p class="oldPrice__article">120 &euro;</p>
+            <p class="discountedPrice">65 &euro;</p>
+          </div>
+        </div>
+        <div class="article">
+          <h3 class="discountapplied">- 45%</h3>
+          <a href="" class="articleCard">
+            <img
+              class="article__img"
+              src="./assets/images/gant-boxe-1.png"
+              alt=""
+            />
+          </a>
+          <p class="articleName">GANTS DE BOXE KLIMAX V3</p>
+          <div class="soldedArticle">
+            <button class="salearcticle">Voir la vente</button>
+            <p class="oldPrice__article">120 &euro;</p>
+            <p class="discountedPrice">65 &euro;</p>
+          </div>
+        </div>
+        <div class="article">
+          <h3 class="discountapplied">- 45%</h3>
+          <a href="" class="articleCard">
+            <img
+              class="article__img"
+              src="./assets/images/gant-boxe-2.png"
+              alt=""
+            />
+          </a>
+          <p class="articleName">GANTS DE BOXE KLIMAX V3</p>
+          <div class="soldedArticle">
+            <button class="salearcticle">Voir la vente</button>
+            <p class="oldPrice__article">120 &euro;</p>
+            <p class="discountedPrice">65 &euro;</p>
+          </div>
         </div>
       </section>
-      <div class="article">
-        <h3 class="discountapplied">- 45%</h3>
-        <img src="./assets/images/gant-boxe-1.png" alt="" />
-        <p class="articleName">GANTS DE BOXE KLIMAX V3</p>
-        <button class="salearcticle">Voir la vente</button>
-        <h3 class="oldPrice__article">
-          120  &euro;<span class="discountedPrice"> 65  &euro;</span>
-        </h3>
-      </div>
-      <div class="article">
-        <h3 class="discountapplied">- 45%</h3>
-        <img src="./assets/images/gant-boxe-2.png" alt="" />
-        <p class="articleName">GANTS DE BOXE KLIMAX V3</p>
-        <button class="salearcticle">Voir la vente</button>
-        <h3 class="oldPrice__article">
-          120  &euro;<span class="discountedPrice"> 65  &euro;</span>
-        </h3>
-      </div>
     </main>
-    <footer>
+    <footer class="footerHomepage">
       <nav class="footerNavbar">
-        <a href="#" class="footerNavbar__link">Qui sommes-nous</a>
-        <a href="#" class="footerNavbar__link">Contact</a>
-        <a href="#" class="footerNavbar__link">Assitance</a>
-        <a href="#" class="footerNavbar__link">CGV</a>
+        <ul>
+          <li id="aboutUs">
+            <a href="#" class="footerNavbar__link">Qui sommes-nous</a>
+          </li>
+          <li><a href="#" class="footerNavbar__link">Contact</a></li>
+          <li><a href="#" class="footerNavbar__link">Assitance</a></li>
+          <li><a href="#" class="footerNavbar__link">CGV</a></li>
+        </ul>
       </nav>
       <section class="services">
         <div class="service__card">
@@ -124,18 +157,32 @@
       <hr />
       <section class="socialMedias">
         <a href="" class="socialMedia__link">
-          <img src="./assets/images/icon-facebook.png" alt="facebook" class="socialMedia__icon" />
+          <img
+            src="./assets/images/icon-facebook.png"
+            alt="facebook"
+            class="socialMedia__icon"
+          />
         </a>
         <a href="" class="socialMedia__link">
-          <img src="./assets/images/icon-twitter.png" alt="twitter" class="socialMedia__icon" />
+          <img
+            src="./assets/images/icon-twitter.png"
+            alt="twitter"
+            class="socialMedia__icon"
+          />
         </a>
         <a href="" class="socialMedia__link">
-          <img src="./assets/images/icon-linkedin.png" alt="linkedin" class="socialMedia__icon" />
+          <img
+            src="./assets/images/icon-linkedin.png"
+            alt="linkedin"
+            class="socialMedia__icon"
+          />
         </a>
       </section>
-      <p class="copyRight">	&copy; <span id="year"></span> sport priviliege. Tout droits réservés</p>
+      <p class="copyRight">
+        &copy; <span id="year"></span> sport priviliege. Tout droits réservés
+      </p>
     </footer>
     <!-- script -->
-     <script src="./yearFunction.js"></script>
+    <script src="./yearFunction.js"></script>
   </body>
 </html>
