@@ -163,7 +163,7 @@ body {
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   gap: 2rem; /* Ajoute un espace homogène entre les éléments */
-  width:70%;
+  width: 70%;
   margin: -5% auto 0;
   border-radius: 5px;
   background-color: var(--color-articleName);
@@ -185,7 +185,7 @@ li::marker {
 .footerNavbar__link {
   color: var(--color-text);
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .services {
   display: flex;
@@ -204,7 +204,7 @@ li::marker {
   margin: auto;
 }
 .service__descr {
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 0.5rem;
   margin: 4%;
   text-align: center;
@@ -220,20 +220,19 @@ hr {
   align-items: center;
 }
 .socialMedia__link {
-  padding: 1rem;
+  padding: 2rem;
 }
 .socialMedia__icon {
-  width: 60%;
-  margin: auto;
+  /* width: 50px; */
+  margin:auto;
 }
-.copyRight  {
+.copyRight {
   padding: 1.5rem;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   text-align: center;
 }
-#year{
-  font-size: 0.5rem;
-
+#year {
+  font-size: .7rem;
 }
 @media (min-width: 768px) {
   .navbar {
