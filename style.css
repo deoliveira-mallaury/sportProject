@@ -1,31 +1,242 @@
 @font-face {
-    font-family: 'Liberation';
-    src: url('./fonts/LiberationSans-Bold-webfont.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Liberation";
+  src: url("./fonts/LiberationSans-Bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Liberation';
-    src: url('./fonts/LiberationSans-Regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Liberation";
+  src: url("./fonts/LiberationSans-Regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-:root{
-    --color-ocre:#ea9f06;
-    --bg-color: #f3f3f3;
-    --bg-color-img:#1b1b1b;
-    --bg--color-footer:#373737;
-    --color-social§Media: #818181;
-
-    --fnt-fam: "liberation-sans", sans-serif;
+:root {
+  --color-ocre: #ea9f06;
+  --bg-color: #f3f3f3;
+  --bg-color-img: #1b1b1b;
+  --bg--color-footer: #373737;
+  --color-social§Media: #818181;
+  --color-text: #2d2d2d;
+  --color-articleName: #ffffff;
+  --fnt-fam: "liberation-sans", sans-serif;
 }
-*{
-    width: 100vw;
-    margin: 0;
-    font-family: var(--fnt-fam);
-    background-color: var(--bg-color);
+*,
+body {
+  max-width: 100vw;
+  margin: 0;
+  font-size: 10px;
+  font-family: var(--fnt-fam);
+}
+.head__homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+.brand {
+  width: 60%;
+  margin: 2rem auto;
+}
+.logo {
+  padding: 1rem auto;
+  width: 100%;
+}
+.section__brandPres {
+  margin: 1rem auto;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.section__branPresHighlight {
+  color: var(--color-ocre);
+}
+.welcomeUserConnected {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.navbar__link {
+  text-align: center;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+.main__homepage {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 0;
+  background-color: var(--bg-color-img);
+  flex-direction: column;
+}
+.top_catalog_img {
+  background-color: var(--bg-color-img);
+  display: flex;
+  justify-content: center;
+}
+.catalog_img {
+  width: 93%;
+}
+.section__articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-color);
+  width: 85%;
+  padding: 7% 0 40%;
+  margin: auto;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0 0 0;
+}
+.articleCard {
+  width: auto;
+  background-color: var(--color-articleName);
+}
+.discountapplied {
+  color: var(--color-ocre);
+  background-color: var(--bg-color-img);
+  width: 15%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 15%;
+}
+.article__img {
+  margin: auto;
+  width: 100%;
+}
+.articleName {
+  width: 53%;
+  margin: -1.5rem auto 0.5rem;
+  text-align: center;
+  font-size: 0.6rem;
+  background-color: var(--color-articleName);
+}
+.salearcticle {
+  background-color: var(--bg-color-img);
+  color: var(--color-articleName);
+  width: 50%;
+  padding: 0.2rem;
+  border: none;
+}
+.soldedArticle {
+  display: flex;
+  width: auto;
+  padding: 0.5rem 0;
+}
+.oldPrice__article {
+  font-weight: 600;
+  text-align: center;
+  width: 25%;
+  text-decoration: line-through 1px solid;
+}
+.discountedPrice {
+  font-weight: 600;
+  text-align: center;
+  width: 25%;
+  color: var(--color-ocre);
+}
+.footerHomepage {
+  color: var(--color-articleName);
+  background-color: var(--bg--color-footer);
+  display: flex;
+  flex-direction: column;
+}
+.footerNavbar ul {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  gap: 2rem; /* Ajoute un espace homogène entre les éléments */
+  width:70%;
+  margin: -5% auto 0;
+  border-radius: 5px;
+  background-color: var(--color-articleName);
+  color: var(--color-text);
+  padding: 0.8rem; /* Ajoute un peu d'espace autour */
+}
+
+li {
+  text-align: center;
+  list-style: disc;
+  margin: 0; /* Supprime les marges inutiles */
+}
+li::marker {
+  color: var(--color-social§Media);
+}
+#aboutUs {
+  list-style: none;
+}
+.footerNavbar__link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: .8rem;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1.5rem auto;
+}
+.service__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+.service__icon {
+  width: 20%;
+  margin: auto;
+}
+.service__descr {
+  font-weight:lighter;
+  font-size: 0.5rem;
+  margin: 4%;
+  text-align: center;
+}
+hr {
+  width: 90%;
+  margin: auto;
+  border: var(--color-social§Media) 1px solid;
+}
+.socialMedias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialMedia__link {
+  padding: 1rem;
+}
+.socialMedia__icon {
+  width: 60%;
+  margin: auto;
+}
+.copyRight  {
+  padding: 1.5rem;
+  font-size: 0.5rem;
+  text-align: center;
+}
+#year{
+  font-size: 0.5rem;
+
+}
+@media (min-width: 768px) {
+  .navbar {
+    background-color: purple;
+  }
 }
