@@ -45,9 +45,15 @@ body {
   padding: 1rem auto;
   width: 100%;
 }
+.section__brandPres,
+.welcomeUserConnected,
+.discountapplied{
+  font-size: 1rem;
+}
+
+
 .section__brandPres {
   margin: 1rem auto;
-  font-size: 1rem;
   font-weight: 500;
   text-align: center;
 }
@@ -55,7 +61,6 @@ body {
   color: var(--color-ocre);
 }
 .welcomeUserConnected {
-  font-size: 1rem;
   font-weight: 400;
   margin: 1rem;
 }
@@ -91,13 +96,13 @@ body {
   justify-content: center;
   background-color: var(--bg-color);
   width: 85%;
-  padding: 7% 0 40%;
+  padding: 7% 0 30% 0;
   margin: auto;
 }
 .article {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   margin: auto;
   padding: 1rem 0 0 0;
 }
@@ -106,16 +111,15 @@ body {
   background-color: var(--color-articleName);
 }
 .discountapplied {
+  z-index: 1;
   color: var(--color-ocre);
   background-color: var(--bg-color-img);
   width: 15%;
   text-align: center;
-  font-size: 1rem;
   font-weight: 600;
   padding: 0.5rem;
   border-radius: 10px;
-  position: absolute;
-  right: 15%;
+  margin: 0 0 -5% 85%;
 }
 .article__img {
   margin: auto;
@@ -160,21 +164,21 @@ body {
 }
 .footerNavbar ul {
   display: flex;
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  gap: 2rem; /* Ajoute un espace homogène entre les éléments */
+  justify-content: center; 
+  align-items: center;
+  gap: 2rem; 
   width: 70%;
   margin: -5% auto 0;
   border-radius: 5px;
   background-color: var(--color-articleName);
   color: var(--color-text);
-  padding: 0.8rem; /* Ajoute un peu d'espace autour */
+  padding: 0.8rem;
 }
 
 li {
   text-align: center;
   list-style: disc;
-  margin: 0; /* Supprime les marges inutiles */
+  margin: 0;
 }
 li::marker {
   color: var(--color-social§Media);
@@ -223,8 +227,7 @@ hr {
   padding: 2rem;
 }
 .socialMedia__icon {
-  /* width: 50px; */
-  margin:auto;
+  margin: auto;
 }
 .copyRight {
   padding: 1.5rem;
@@ -232,10 +235,99 @@ hr {
   text-align: center;
 }
 #year {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 @media (min-width: 768px) {
-  .navbar {
-    background-color: purple;
+  .head__homepage {
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
   }
+  .brand {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: flex-start;
+    margin: 2rem 0 1rem 9rem;
+  }
+
+  .section__brandPres {
+    text-align: start;
+    margin: 0;
+  }
+
+  .welcomeUserConnected {
+    display: flex;
+    justify-content: end;
+    height: 5%;
+    margin: 2rem 2rem 2rem 5rem;
+    padding: 1rem;
+    align-items: center;
+    width: 30%;
+  }
+
+  .navbar {
+    width: 30%;
+    margin: -3rem 1rem 1rem 60%;
+  }
+
+  .main__homepage {
+    margin: 0;
+  }
+
+  .top_catalog_img {
+    margin: auto;
+    width: 70%;
+  }
+
+  .catalog_img {
+    width: 100%;
+  }
+
+  .section__articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 3rem;
+    padding: 7% 0 10% 0;
+  }
+
+  .article {
+    width: 35%;
+  }
+
+  .articleName,
+  .salearcticl {
+    font-size: 1rem;
+  }
+  .footerNavbar ul {
+    margin: -1% auto;
+    width: 25%;
+  }
+  .footerNavbar__link,
+  .service__descr,
+  #year {
+    font-size: 0.8rem;
+  }
+  .services {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2% 13%;
+  }
+
+  hr {
+    width: 85%;
+  }
+  .socialMedias {
+    width: 70%;
+    margin: auto;
+    padding: 0 4rem;
+  }
+  .socialMedia__link {
+    padding: 1rem 0;
+  }
+  .socialMedia__icon {
+    width: 40%;
+  }
+
 }
