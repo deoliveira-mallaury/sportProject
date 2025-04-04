@@ -62,7 +62,8 @@ body {
 }
 .welcomeUserConnected {
   font-weight: 400;
-  margin: 1rem;
+  margin: 3% 14%;
+  width: 40%;
 }
 .navbar {
   display: flex;
